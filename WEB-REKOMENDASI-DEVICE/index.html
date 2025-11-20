@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekomendasi Device</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="512x512" href="/gambar/logo.ico" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <h1>Rekomendasi Device</h1>
+      </header>
+
+      <!-- Filter -->
+      <aside class="sidebar" id="sidebar">
+        <h2>Filter Device</h2>
+        <ul>
+          <li>
+            <label
+              ><input type="checkbox" class="filter" value="laptop" checked />
+              Laptop</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" class="filter" value="hp" checked />
+              HP</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" class="filter" value="tablet" checked />
+              Tablet</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" class="filter" value="gaming" checked />
+              Gaming</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" class="filter" value="daily" checked />
+              Daily</label
+            >
+          </li>
+          <li>
+            <label
+              ><input
+                type="checkbox"
+                class="filter"
+                value="harga-murah"
+                checked
+              />
+              Harga Murah</label
+            >
+          </li>
+        </ul>
+        <button id="close-sidebar">✖</button>
+      </aside>
+
+      <!-- Kontainer Device -->
+      <div class="device-container">
+        <!-- Laptop -->
+        <div class="device-card" data-category="laptop daily">
+          <img
+            src="https://static.retailworldvn.com/Products/Images/12217/301764/laptop-asus-vivobook-15-celeron-n4500-4gb-256gb-win11-a416ka-fhd422-1.jpg"
+            alt="Asus Vivobook 15"
+          />
+          <h3>Asus VivoBook 15</h3>
+          <p>RAM 16GB • SSD 512GB • Intel® Core™ i5</p>
+          <strong>Rp 9.500.000</strong>
+        </div>
+
+        <div class="device-card" data-category="laptop daily">
+          <img
+            src="https://static.retailworldvn.com/News/0/2-845x442-56.jpg"
+            alt="Lenovo IdeaPad Slim 3"
+          />
+          <h3>Lenovo IdeaPad Slim 3</h3>
+          <p>RAM 16GB • SSD 1TB • Intel® Core™ i7</p>
+          <strong>Rp 12.000.000</strong>
+        </div>
+
+        <div class="device-card" data-category="laptop gaming">
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/573/2024/11/09/IMG_20241109_110412-1465043986.png"
+            alt="Lenovo LOQ"
+          />
+          <h3>Lenovo LOQ</h3>
+          <p>Ram 8GB • 512 GB • Intel® Core™ i7 • RTX 4060</p>
+          <strong>Rp 18.000.000</strong>
+        </div>
+
+        <div class="device-card" data-category="laptop daily">
+          <img
+            src="https://cdn.antaranews.com/cache/1200x800/2023/01/18/macbook-pro-m2-m2-max.jpg"
+            alt="Apple Macbook M3"
+          />
+          <h3>Apple Macbook M3</h3>
+          <p>RAM 16GB • SSD 512 GB • Apple M3</p>
+          <strong>Rp 22.999.000</strong>
+        </div>
+
+        <div class="device-card" data-category="laptop harga-murah">
+          <img
+            src="https://static.retailworldvn.com/Products/Images/12217/328030/acer-aspire-3-slim-intel-core-i3-a314-36m-34tx-silver-1.jpg"
+            alt="Acer Aspire Slim 3"
+          />
+          <h3>Acer Aspire Slim 3</h3>
+          <p>RAM 8GB • SSD 512GB • Intel® Core™ i3-N305</p>
+          <strong>Rp 4.500.000</strong>
+        </div>
+
+        <div class="device-card" data-category="laptop harga-murah">
+          <img
+            src="https://www.tokozoom.com/assets/img/produk/bda1baeb573b3e7cfc7a3ecec0e3d886.jpg"
+            alt="HP Laptop 14s"
+          />
+          <h3>HP Laptop 14s</h3>
+          <p>16GB • SSD 512GB • Ryzen 7</p>
+          <strong>Rp 9.500.000</strong>
+        </div>
+
+        <!-- HP -->
+        <div class="device-card" data-category="hp daily harga-murah">
+          <img
+            src="https://techdaily.id/wp-content/uploads/2024/08/Spesifikasi-Samsung-Galaxy-A06-3.jpg"
+            alt="Samsung Galaxy A06"
+          />
+          <h3>Samsung Galaxy A06</h3>
+          <p>6 GB • 128 GB Storage • Baterai 5000 mAh</p>
+          <strong>Rp 2.000.000</strong>
+        </div>
+
+        <div class="device-card" data-category="hp">
+          <img src="/gambar/hp/Iphone-17.jpg" alt="IPhone 17"/>
+          <h3>IPhone 17</h3>
+          <p>512GB • Apple A19 • Refresh Rate 120Hz</p>
+          <strong>Rp 28.999.000</strong>
+        </div>
+
+        <div class="device-card" data-category="hp daily">
+          <img
+            src="https://asset-2.tribunnews.com/tribunnews/foto/bank/images/google-pixel-9-6575u5.jpg"
+            alt="Google Pixel 9"
+          />
+          <h3>Google Pixel 9</h3>
+          <p>RAM 12 GB • 256 GB • Google Tensor G4</p>
+          <strong>Rp 16.000.000</strong>
+        </div>
+
+        <div class="device-card" data-category="hp gaming">
+          <img
+            src="https://cdn1-production-images-kly.akamaized.net/Ny0uRVet-0aPIXmACMSiC0CaSKY=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4062571/original/028857000_1656036852-7a6612fe17f461a332e9a23a6d4595ec.jpg"
+            alt="Poco F4"
+          />
+          <h3>Poco F4</h3>
+          <p>RAM 8GB • 256GB • Snapdragon 870 5G</p>
+          <strong>Rp 5.500.000</strong>
+        </div>
+
+        <div class="device-card" data-category="hp harga-murah">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6VfrAnd3JjuA7Xy2JQVhZlgXw23tHFT9vrA&s"
+            alt="Infinix Hot 50"
+          />
+          <h3>Infinix Hot 50</h3>
+          <p>Dimensity 6300 • Baterai 5000 mAh • Layar 120Hz</p>
+          <strong>Rp 2.500.000 </strong>
+        </div>
+
+        <div class="device-card" data-category="hp harga-murah daily">
+          <img
+            src="https://gadgetup.id/wp-content/uploads/2025/01/redmi-note-14-5g.webp"
+            alt="Redmi Note 14"
+          />
+          <h3>Redmi note 14</h3>
+          <p>8GB/128GB • IP64 • 120 Hz</p>
+          <strong>Rp 4.800.000 </strong>
+        </div>
+
+        <div class="device-card" data-category="hp gaming">
+          <img
+            src="https://dlcdnwebimgs.asus.com/files/media/C4512AF4-88A1-4B0E-91F7-BE550046216F/v1.1/features/images/large/1x/animation/kv/phone_right.png"
+            alt="ROG Phone 7"
+          />
+          <h3>Rog Phone 7</h3>
+          <p>Li-Po 6000 mAh • Snapdragon 8 Gen 2 • 165 Hz</p>
+          <strong>Rp 15.999.000</strong>
+        </div>
+
+        <!-- Tablet -->
+        <div class="device-card" data-category="tablet gaming daily">
+          <img src="https://m.media-amazon.com/images/G/01/apple/AMZ_CompareChart_iPad_10_Gen._CB607992322_.png" 
+          alt="iPad 10th Gen" />
+          <h3>iPad 10th Gen</h3>
+          <p>8GB/256GB • 256GB • A14 Chip</p>
+          <strong>Rp 13.999.000</strong>
+        </div>
+
+        <div class="device-card" data-category="tablet harga-murah daily">
+          <img src="/gambar/tablet/huawei.jpg" 
+          alt="Huawei MatePad SE" />
+          <h3>Huawei MatePad SE</h3>
+          <p>11 inch • 6GB/128GB</p>
+          <strong>Rp 3.200.000</strong>
+        </div>
+
+        <div class="device-card" data-category="tablet harga-murah daily">
+          <img src="/gambar/tablet/kingfinix.jpg" alt="Infinix XPAD 4G" />
+          <h3>Infinix XPAD 4G</h3>
+          <p>11 inci • 4GB/256GB</p>
+          <strong>Rp 2.800.000</strong>
+        </div>
+
+        <div class="device-card" data-category="tablet harga-murah daily">
+          <img src="/gambar/tablet/redmi2.jpg" alt="Redmi Pad SE" />
+          <h3>Redmi Pad SE</h3>
+          <p>11 inci • 6GB/128GB</p>
+          <strong>Rp 2.999.000</strong>
+        </div>
+
+        <div class="device-card" data-category="tablet harga-murah daily">
+          <img src="/gambar/tablet/siomi.jpg" alt="Xiaomi Pad 6" />
+          <h3>Xiaomi Pad 6</h3>
+          <p>Snapdragon 870 • 8GB/256GB</p>
+          <strong>Rp 5.500.000</strong>
+        </div>
+
+        <div class="device-card" data-category="tablet gaming">
+          <img
+            src="https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-tab-s9-plus-5g-x816-sm-x816bzaaxid-537327171"
+            alt="Samsung Galaxy Tab S9"
+          />
+          <h3>Samsung Galaxy Tab S9</h3>
+          <p>11" AMOLED • 256GB • Snapdragon 8 Gen 2</p>
+          <strong>Rp 18.999.000</strong>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 Rekomendasi Device • Dibuat oleh <b>ValDaf</b></p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

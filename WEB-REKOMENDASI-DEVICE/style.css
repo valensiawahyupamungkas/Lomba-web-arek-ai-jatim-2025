@@ -1,0 +1,191 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            padding-top: 73px; /* digunakan untuk sesuaikan tinggi header */
+        }
+        header {
+            position: fixed;     /* bikin header ngikut di atas */
+            top: 0;              /*nempel di paling atas */
+            left: 0;
+            font-size: 12px;
+            background: #333;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            text-align: center;
+            z-index: 1000;       /* biar gak ketimpa elemen lain */
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -360px; /* sembunyikan dulu */
+            width: 250px;
+            height: 100vh;
+            background: #222;
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+            transition: left 0.3s ease;
+            z-index: 1200;
+        }
+        .sidebar.active {
+            left: 0; /* tampilkan */
+        }
+        .sidebar h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li label {
+            cursor: pointer;
+        }
+        .sidebar input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        #close-sidebar {
+            background: #ff4c4c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .menu-toggle {
+            position: absolute;   /* posisikan relatif ke header */
+            top: 15px;            /* jarak dari atas */
+            left: 20px;           /* jarak dari kiri */
+            background: none;     /* tanpa background */
+            border: none;         /* tanpa border */
+            color: white;         /* warna ikon ☰ */
+            font-size: 18px;      /* ukuran ikon */
+            cursor: pointer;      /* ubah jadi tangan pas hover */
+        }
+
+        .menu-toggle:hover {
+            color: #ffcc00; /* efek hover biar keren */
+        }
+
+        .device-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px 40px;
+        }
+        .device-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 260px;
+            text-align: center;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .device-card:hover {
+            transform: scale(1.05);
+        }
+        .device-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+}
+        .device-card h3 {
+            margin: 10px 0 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0 5px 8px;
+            
+        }
+        label {
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .detail-box {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        background: #1b1b1b;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        text-align: center;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        }
+
+        #gambar {
+        width: 55%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        object-fit: contain;
+        }
+
+        .spec-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 10px;
+        border-bottom: 1px solid #333;
+        }
+
+        .spec-row span:first-child {
+        color: #bbbbbb;
+        font-weight: 600;
+        }
+
+        .spec-row:hover {
+        background: rgba(255,255,255,0.05);
+        transition: 0.2s;
+        }
+
+        #varian-device, #kelebihan-device, #kekurangan-device {
+        text-align: left;
+        margin-top: 18px;
+        font-size: 21px;
+        font-weight: bold;
+        color: #ffffff;
+        }
+
+        #kelebihan, #kekurangan {
+        text-align: left;
+        margin: 15px 0;
+        padding-left: 15px;
+        }
+        
+        .plus {
+        color: #4CAF50;
+        font-weight: 500;
+        margin-bottom: 6px;
+        }
+        
+        .minus {
+        color: #ff5c5c;
+        font-weight: 500;
+        margin-bottom: 6px;
+        }
+        /* Halaman tampil */
+        .page {
+        opacity: 1;
+        transition: opacity 0.4s ease;
+        }
+
+        /* Saat halaman mau keluar */
+        .page.fade-out {
+        opacity: 0;
+        }
